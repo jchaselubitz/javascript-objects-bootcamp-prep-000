@@ -1,9 +1,8 @@
-function updateObjectWithKeyAndValue (obj, key, value) {
-  return Object.assign({}, obj, {[key]: value})
+var playlist = {'The Heavy': 'How Do You Like Me Now?'}
+
+
+function updatePlaylist(playlist, artist, song) {
+  playlist['artist'] = song
+  return playlist
 }
 
-const nuts = {peanuts: 10}
-
-updateObjectWithKeyAndValue(nuts, cashews, 15)
-
-console.log(nuts)
